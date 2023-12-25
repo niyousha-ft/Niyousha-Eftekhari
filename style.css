@@ -1,0 +1,239 @@
+:root {
+  --primary-color: #b370cdbd;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --hover-color: rgb(104, 0, 142);
+}
+
+body {
+  margin-top: 57px;
+  margin-bottom: 100px;
+  background: linear-gradient(-225deg, #e3fdf5 0%, #ffe6fa 100%);
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 50px;
+  font-family: "Playpen Sans", cursive;
+  color: var(--hover-color);
+}
+
+h2 {
+  font-size: 34px;
+  font-family: "Quicksand", sans-serif;
+}
+
+h3 {
+  font-size: 30px;
+  opacity: 0.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.hero {
+  background-color: #fdeefa;
+  padding: 50px 10px 30px;
+}
+
+.intro-msg {
+  font-weight: bold;
+  font-family: "Quicksand", sans-serif;
+  color: var(--hover-color);
+  text-shadow: var(--box-shadow);
+}
+
+.typewriter .intro-msg {
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid rgb(149, 0, 255); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 70%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgb(149, 0, 255);
+  }
+}
+
+.whole {
+  text-align: center;
+}
+
+.whole-work {
+  padding: 60px 0 0 0;
+  text-align: center;
+}
+
+.navigation-links {
+  display: flex;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.navigation-links a {
+  margin: 20px;
+}
+
+.primary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  background: var(--primary-color);
+  box-shadow: var(--box-shadow);
+  color: white;
+  font-family: "Quicksand", sans-serif;
+}
+
+.primary-link:hover {
+  color: var(--hover-color);
+}
+
+.secondary-link {
+  border-radius: 4px;
+  padding: 20px 15px;
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.secondary-link:hover {
+  color: var(--hover-color);
+}
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
+
+.about-paragraphs {
+  margin: 30px 0;
+}
+
+.homepage-img {
+  border-radius: 7px;
+  box-shadow: var(--box-shadow);
+  margin-bottom: 10px;
+}
+
+.myself-img {
+  width: 50%;
+  border-radius: 30px;
+  box-shadow: var(--box-shadow);
+}
+
+.about-paragraphs p {
+  margin: 10px;
+}
+
+.whole h3 {
+  font-weight: bold;
+  color: var(--hover-color);
+}
+
+.email-link {
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+  font-size: 28px;
+  text-decoration: none;
+}
+
+.email-link:hover {
+  text-decoration: underline;
+  color: var(--hover-color);
+}
+
+.git-link {
+  color: var(--hover-color);
+}
+
+footer {
+  font-family: "Quicksand", sans-serif;
+  color: var(--hover-color);
+  margin: 60px 0;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer .contact-box {
+  box-shadow: var(--box-shadow);
+  padding: 30px 120px;
+  border-radius: 10px;
+}
+footer .secondary-link:hover {
+  background-color: var(--hover-color);
+  color: white;
+}
+footer .social-links a {
+  margin: 0 20px;
+  font-size: 26px;
+  background-color: #f5f4f9;
+  box-shadow: var(--box-shadow);
+  padding: 12px 20px;
+  border-radius: 50px;
+  color: var(--hover-color);
+}
+
+footer .social-links a:hover {
+  color: white;
+  background-color: var(--hover-color);
+}
+
+@media (max-width: 576px) {
+  p,
+  h2,
+  .primary-link {
+    text-align: center;
+    max-width: 100%;
+    display: block;
+  }
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  .intro-msg {
+    font-size: 12px;
+  }
+  .myself-img {
+    width: 40%;
+  }
+}
